@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /temp/
+
+Sitemap: https://orxmovielist.netlify.app/sitemap.xml
