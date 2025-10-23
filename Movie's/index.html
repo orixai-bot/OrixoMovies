@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIXO MOVIES - Best Bollywood, Hollywood, Horror, Action Movies List 2024-2027</title>
+    <meta name="description" content="Discover Orixo Movies collection of 900+ top-rated Bollywood and Hollywood films. Find the best Action, Horror, Drama, and upcoming 2026-2027 releases.">
+    <link rel="icon" type="image/png" href="favicon-modified.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gradient">
+    <div id="app">
+        
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo-group">
+                        <i data-lucide="film" class="icon-film"></i>
+                        <div>
+                            <h1 class="logo-title">ORIXO MOVIES</h1>
+                            <p class="logo-subtitle">455+ Top Movies Collection</p>
+                        </div>
+                    </div>
+                    
+                    <div id="auth-controls">
+                        </div>
+                </div>
+
+                <div class="search-container">
+                    <i data-lucide="search" class="icon-search-input"></i>
+                    <input
+                        type="text"
+                        placeholder="Search 455+ top movies..."
+                        id="search-input"
+                        class="search-input"
+                    />
+                </div>
+
+                <div class="nav-buttons-container" id="nav-buttons-container">
+                    </div>
+
+                <div class="filter-controls">
+                    <button id="toggle-filters-button" class="filter-toggle-button">
+                        <i data-lucide="filter" class="icon-filter"></i>
+                        Filter by Genre
+                    </button>
+                    <div class="genre-filter-container" id="genre-filter-container">
+                        </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content-wrapper">
+            <main class="container main-content">
+                <div class="movie-grid" id="movie-grid">
+                    </div>
+                <div id="no-movies-message" class="no-movies-message hidden">
+                    <i data-lucide="film" class="icon-film-large"></i>
+                    
+                    <h3 class="text-2xl mb-2">No movies found</h3>
+                    <p class="text-gray-400">Try a different search or filter</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2 class="text-2xl font-bold mb-4">Login to Orixo</h2>
+            <input
+                type="email"
+                placeholder="Email"
+                id="login-email-input"
+                class="login-input"
+            />
+            <input
+                type="text"
+                placeholder="Name"
+                id="login-name-input"
+                class="login-input"
+            />
+            <button id="perform-login-button" class="login-button-primary">
+                Login
+            </button>
+            <button id="cancel-login-button" class="login-button-secondary">
+                Cancel
+            </button>
+        </div>
+    </div>
+
+    <div id="detail-modal" class="modal-overlay hidden">
+        <div id="detail-modal-content" class="detail-modal-container">
+            </div>
+    </div>
+
+    <footer class="footer">
+        <i data-lucide="film" class="icon-film-footer"></i>
+        <h3 class="footer-title">ORIXO MOVIES</h3>
+        <p class="footer-subtitle">Your Ultimate Movie Collection</p>
+        <p class="footer-text">© 2024 Orixo Movies. All Rights Reserved</p>
+        <p class="footer-text-small">455+ Global Top Movies | Bollywood & Hollywood</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
